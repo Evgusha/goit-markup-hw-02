@@ -3,18 +3,27 @@
 --title-color: #212121;
 --light-color: #FFFFFF;
 --text-color: #757575;
+--body-color: #E5E5E5;
+--footer-color:#2F303A; 
 }
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color:#E5E5E5;
-    
+    background-color:var(--body-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
-
+.link {
+    text-decoration: none;
+} 
 .list {
     list-style: none;
 }
+.current a {
+    color: var(--accent-color);
+}
+
 /*------------HEDER------------*/
 
 .header {
@@ -28,30 +37,26 @@ body {
     left: 215px;
     top: 24px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: black;
 }
 .logo-span {
-    color: #2196F3;
+    color:var(--accent-color);
 }
-.link {
-    text-decoration: none;
-} 
-.header-item {
 
+.header-item {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-color);
 }
 
 .tel, .mail {
-color: #757575;
+    font-weight: 500;
+    color:var(--text-color);
 }
 
 
@@ -63,7 +68,7 @@ color: #757575;
 
 .hero {
 
-    background-color:#2F303A;
+    background-color:var(--footer-color);
 }
 .hero-h1 {
     font-family: 'Roboto';
@@ -88,7 +93,7 @@ color: #757575;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     color: var(--light-color);
 }
 
@@ -98,7 +103,6 @@ color: var(--accent-color);
 
 
 /*-----BENEFITS-----*/
-
 
 .visually-hidden {
     position: absolute;
@@ -116,16 +120,12 @@ color: var(--accent-color);
 .benefits-title {
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
 }
 
 .benefits-text {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--text-color);
 }
 
@@ -135,7 +135,6 @@ color: var(--accent-color);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-color);
 }
 
@@ -146,7 +145,6 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-color);
 }
 
@@ -154,47 +152,39 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-color);
 }
 /*-----FOOTER-----*/
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--footer-color);
 }
 .footer-logo {
+    font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--light-color);
 }
 .logo-span {
-    color: #2196F3;
+    color: var(--accent-color);
 }
-.footer-address {
+.footer{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em; 
+}
+.footer-address {
+  
     color: var(--light-color);
 }
 
 .footer-mail{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;  
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 .fotter-tel{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-mail:hover, .footer-mail:focus, .fotter-tel:hover, .fotter-tel:focus{
@@ -206,7 +196,7 @@ color: var(--accent-color);
 .filtr-btn {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
@@ -221,14 +211,13 @@ color: var(--accent-color);
 /*--------------------PORTFOLIO--WORK----------------*/
 .work-title {
     font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--title-color);
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
 
 }
 .work-text {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
     color: var(--text-color);
 }
